@@ -1,0 +1,71 @@
+:root{
+    --text-color: hsl(193, 38%, 86%);
+    --advice-dice-color: hsl(150, 100%, 66%);
+    --advice-card-color: hsl(217, 19%, 24%);
+    --background-color: hsl(218, 23%, 16%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--advice-card-color);
+    width: 700px;
+    min-width: 380px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card p, .card h2, .card picture{
+    width: 70%;
+    text-align: center;
+}
+
+.dice{
+    position: absolute;
+    top: 275px;
+    background-color: var(--advice-dice-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.dice img{
+    width: 20px;
+    height: 20px;
+}
+
+.dice button{
+    background: none;
+    border: none;
+}
+
+.dice button:hover{
+    cursor: pointer;
+}
+
+p{
+    color: var(--advice-dice-color);
+}
+
+h2{
+    color: var(--text-color);
+}
+
+
+@media (max-width: 715px){
+    .card{
+        margin: 10px;
+    }
+}
